@@ -5,9 +5,11 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     const pushDeposit = depositField.value;
     const pushDepositNumber = parseFloat(pushDeposit);
 
+
     const previousDepositBox = document.getElementById('previous-deposit');
     const previousDeposit = previousDepositBox.innerText;
     const previousDepositNumber = parseFloat(previousDeposit);
+
 
     const totalDeposit = pushDepositNumber + previousDepositNumber;
     previousDepositBox.innerText = totalDeposit;
